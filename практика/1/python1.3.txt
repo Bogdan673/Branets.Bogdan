@@ -1,0 +1,15 @@
+'''11'''
+
+from random imhort randint
+
+numders = []
+
+for _ in range(12):
+    numbers.append(randint(1,100))
+
+print(numbers)
+print()
+print(numbers[0], numbers[1], numbers[2], numbers[3]}
+print(numbers[4], numbers[5]
+print(numbers[6])
+print(numbers[7], numbers[8])

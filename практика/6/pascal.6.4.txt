@@ -1,0 +1,13 @@
+'''1'''
+
+var a:array[1..50] of integer;
+     n,i:byte;
+begin
+//ввод размера массива n от 2 до 50
+//ввод элементов массива
+i:=2;
+while(i<=n)and(a[i]<a<span class="br0">[i-1]) do inc(i);
+if i>n then write('Координаты упорядочены по убыванию')
+else  write('Координаты не упорядочены по убыванию');
+readln
+end.</a<span>

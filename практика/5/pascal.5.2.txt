@@ -1,0 +1,23 @@
+'''1'''
+
+var arr:array[1..100] of real;
+    min,max:real;
+    i,imin,imax:integer;
+begin
+for i:=1 to 100 do
+begin
+arr[i] := random(100);
+write(arr[i]:4:0);
+end;
+writeln;
+imin:=1; imax:=1;
+min:=arr[1]; max:=arr[1];
+for i:=1 to 100 do
+begin
+if arr[i]>max then begin max:=arr[i]; imax:=i; end;
+if arr[i]<min then begin min:=arr[i]; imin:=i; end;
+end;
+writeln('arr[',imin,'] - minimal');
+writeln('arr[',imax,'] - maximal');
+writeln((max-min):5:0);
+end.

@@ -1,0 +1,7 @@
+'''2'''
+
+Procedure Min(a,b:real;Var max:real);
+Begin
+     if a>b then max:=a
+      else max:=b;
+End;

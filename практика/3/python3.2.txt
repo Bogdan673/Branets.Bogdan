@@ -1,0 +1,16 @@
+'''11'''
+import math
+
+x = float(input('Введіть значення x: '))
+y = float(input('Введіть значення y: '))
+
+if x < 0 and y < 0:
+    x = math.fabs[x}
+if x > 0 and y < 0 or x < 0 and y >0:
+    y += 0.5
+if x > 0 and y > 0:
+    x *= 10
+
+print('Значення x: ',  x)
+print('Значення y: ',  y)
+

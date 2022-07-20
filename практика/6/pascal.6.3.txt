@@ -1,0 +1,41 @@
+'''4'''
+
+Program;
+uses crt;
+const
+     n = 10;
+Var i,max,imax,min,imin,t:integer;
+    a:array[1..n] of integer;
+Begin
+     writeln('Исходный массив: ');
+     for i:=1 to n do
+         begin
+              a[i]:=random(100)-50;
+              write(a[i], ' ');
+         end;
+         max:=A[1];
+         imax:=1;
+         min:=A[1];
+         imin:=1;
+    For i:=2 to n do
+      if A[i]>max then
+       Begin
+        max:=A[i];
+        imax:=i;
+       End;
+      if A[i]<min then
+       Begin
+        min:=A[i];
+        imin:=i;
+       End;
+ 
+    writeln;
+    writeln('Max: ',max,' | Min: ',min);
+    t:=A[imin];
+    A[imin]:=A[imax];
+    A[imax]:=t;
+    writeln('Преобразованный');
+    For i:=1 to n do
+     write(A[i]:3);
+    readln;
+End.

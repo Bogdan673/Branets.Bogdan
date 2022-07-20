@@ -1,0 +1,10 @@
+'''7'''
+
+Function GetS(r1,r2,r3:real):real;
+var p:real;
+begin
+ p:=(r1+r2+r3)/2;
+ if p*(p-r1)*(p-r2)*(p-r3)>0 then
+ GetS:=sqrt(p*(p-r1)*(p-r2)*(p-r3))
+ else GetS:=0;
+end;

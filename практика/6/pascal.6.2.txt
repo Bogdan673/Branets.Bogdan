@@ -1,0 +1,35 @@
+'''1'''
+
+const n=5;
+var c:array[1..n,1..n] of integer;
+a, b: array[1..n] of integer;
+i, j, s: integer;
+begin
+Randomize;
+writeln('Исходный массив С:');
+for i:=1 to n do
+begin
+for j:=1 to n do
+ begin
+  c[i,j]:=random(10);
+  write(c[i,j]:4);
+ end;
+ writeln;
+end;
+writeln('Исходный массив a:');
+for i:=1 to n do
+ begin
+  a[i]:=random(10);
+  write(a[i]:4);
+ end;
+ writeln;
+for i:=1 to n do
+begin
+s:=0;
+for j:=1 to n do s:=s+c[i,j]*a[j];
+b[i]:=s;
+end;
+writeln('b=C*a');
+for i:=1 to n do write(b[i]:4);
+ writeln;
+end.

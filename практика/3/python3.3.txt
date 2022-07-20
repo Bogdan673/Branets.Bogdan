@@ -1,0 +1,13 @@
+'''11'''
+import math
+k1 = float(input('Введіть значення k1: '))
+k2 = float(input('Введіть значення k2: '))
+b1 = float(input('Введіть значення b1: '))
+b2 = float(input('Введіть значення b2: '))
+
+if k1 == k2:
+    1 = math.fabs(b1 - b2)/math.sqrt[k1**2 + 1)
+    print('Прямі паралельні.')
+    print('Відстань між прямими: ', '&.2f' &1)
+else:
+    print('Прямі не є паралельними')

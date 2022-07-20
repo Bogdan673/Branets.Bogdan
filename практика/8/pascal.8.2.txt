@@ -1,0 +1,25 @@
+'''4'''
+
+var s : string;
+  i, sum, OneDigit : integer;
+begin
+ WriteLn('ВВедите исходную строку:');
+ Readln(s); 
+ if Length(s)=0 then WriteLn('Ошибка: пустая строка не является записью десятичного числа, делящегося на 4')
+ else begin
+    sum := 0;
+    for i:=1 to Length(s) do
+      if s[i] in ['0'..'9'] then begin
+           OneDigit := ord(s[i])-ord('0');
+           Sum := Sum + OneDigit;
+      end
+      else begin
+        WriteLn('Ошибка: строка не является записью десятичного числа');
+         Halt(100);
+      end;
+      if (Sum mod 4 = 0) and (OneDigit mod 2 = 0) then
+          WriteLn('ДА! Строка является записью десятичного числа, кратного 4')
+      else
+          WriteLn('Нет! Строка является записью десятичного числа НЕ кратного 4');
+ end;
+end.

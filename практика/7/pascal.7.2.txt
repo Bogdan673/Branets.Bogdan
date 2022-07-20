@@ -1,0 +1,36 @@
+'''4'''
+
+uses crt ;
+{процедура знаходження кута}  
+procedure ugol ( x , y : real ; var f : real );
+begin
+if x = 0 then f := pi 
+else f := arctan ( abs ( y )/ abs ( x ));
+end ;
+var x1 , y1 , x2 , y2 , x3 , y3 , f1 , f2 , f3 : real ;
+begin
+clrscr ;
+writeln ( 'Точка 1' );
+write ( 'x=' );
+readln ( x1 );
+write ( 'y=' );
+readln ( y1 );
+writeln ( 'Точка 2' );
+write ( 'x=' );
+readln ( x2 );
+write ( 'y=' );
+readln ( y2 );
+writeln ( 'Точка 3' );
+write ( 'x=' );
+readln ( x3 );
+write ( 'y=' );
+readln ( y3 );
+ugol ( x1 , y1 , f1 );
+ugol ( x2 , y2 , f2 );
+ugol ( x3 , y3 , f3 );
+writeln ( 'Мінімальний кут з віссю абцис утворює промінь до точки з координатами' );
+if ( f1 < f2 ) and ( f1 < f3 ) then write ( x1 : 0 : 2 , ' ' , y1 : 0 : 2 )  
+else if ( f2 < f1 ) and ( f2 < f3 ) then write ( x2 : 0 : 2 , ' ' , y2 : 0 : 2 )   
+else write ( x1 : 0 : 2 , '' , y1 : 0 : 2 );
+readln
+end .

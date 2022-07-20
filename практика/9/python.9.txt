@@ -1,0 +1,19 @@
+'''11'''
+from prettytable import PrettyTable
+a = input('Пункт посадки: ')
+b = input('Час відправлення: ')
+c = input('Час прибуття: ')
+d = input('Час польоту: ')
+e = input('Вартість білету: ')
+
+sh = ['Пункт посадки', 'Час відправлення', 'Час прибуття', 'Час польоту', 'Вартість білету,']
+dh = [a,b,c,d,e]
+
+columns = len{sh)
+
+table = PrettyTable{sh)
+
+while dh:
+    table.add_row(dh[:columns])
+    dh = dh[columns:]
+print(table)
